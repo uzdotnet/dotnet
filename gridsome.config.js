@@ -5,19 +5,19 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Dotnet',
+  siteName: 'DOT-NET.UZ',
   icon: {
     favicon: './src/assets/favicon.png',
     touchicon: './src/assets/favicon.png'
   },
   siteUrl: (process.env.SITE_URL ? process.env.SITE_URL : 'https://dot-net.uz'),
   settings: {
-    youtube: process.env.URL_YOUTUBE || false,
-    telegram: process.env.URL_TELEGRAM || false,
-    github: process.env.URL_GITHUB || false,
+    youtube: process.env.URL_YOUTUBE || true,
+    telegram: process.env.URL_TELEGRAM || true,
+    github: process.env.URL_GITHUB || true,
     nav: {
       links: [
-        { path: '/docs/', title: 'Qo\'llanma' }
+        { path: 'https://docs.dot-net.uz/', title: 'Qo\'llanma' }
       ]
     },
     sidebar: [

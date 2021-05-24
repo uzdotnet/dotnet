@@ -10,41 +10,42 @@
             title="Home"
           >
             <Logo :width="40" class="text-ui-primary" />
-            <span class="hidden ml-2 text-xl font-black tracking-tighter uppercase sm:block">
-              {{ meta.siteName }}
+            <span class="hidden ml-2 text-xl font-black tracking-tighter sm:block">
+              .NET Uzbekistan
             </span>
           </g-link>
 
           <div v-if="settings.nav.links.length > 0" class="hidden ml-2 mr-5 sm:block sm:ml-8">
-            <g-link
+            <!-- <g-link
               v-for="link in settings.nav.links"
               :key="link.path"
               :to="link.path"
               class="block p-1 font-medium nav-link text-ui-typo hover:text-ui-primary"
-            >
-              {{ link.title }}
-            </g-link>
+            > -->
+              <!-- {{ link.title }} -->
+            <a href="https://docs.dot-net.uz" > Qo'llanma </a>
+            <!-- </g-link> -->
           </div>
         </div>
 
-        <div class="w-full px-2 sm:px-4 max-w-screen-xs">
+        <!-- <div class="w-full px-2 sm:px-4 max-w-screen-xs">
           <ClientOnly>
             <Search />
           </ClientOnly>
-        </div>
+        </div> -->
 
         <div class="flex items-center justify-end px-2 sm:px-4">
 
-          <a v-if="settings.youtube" :href="settings.youtube" class="hidden ml-3 sm:block" target="_blank" rel="noopener noreferrer" title="YouTube" name="YouTube">
-            <YoutubeIcon size="1.5x" />
+          <a v-if="settings.youtube" href="https://youtube.com/geniuscodersuzbekistan/" class="hidden ml-3 sm:block" target="_blank" rel="noopener noreferrer" title="YouTube" name="YouTube">
+            <YoutubeIcon size="1.5x" class="mr-3" />
           </a>
 
-          <a v-if="settings.telegram" :href="settings.telegram" class="hidden ml-3 sm:block" target="_blank" rel="noopener noreferrer" title="Telegram" name="Telegram">
-            <MessageSquareIcon size="1.5x" />
+          <a v-if="settings.telegram" href="https://t.me/uz_dotnet/" class="hidden ml-3 sm:block" target="_blank" rel="noopener noreferrer" title="Telegram" name="Telegram">
+            <SendIcon  size="1.5x" class="mr-3" />
           </a>
 
-          <a v-if="settings.github" :href="settings.github" class="sm:ml-3" target="_blank" rel="noopener noreferrer" title="Github" name="Github">
-            <GithubIcon size="1.5x" />
+          <a v-if="settings.github" href="https://github.com/uzdotnet/" class="sm:ml-3" target="_blank" rel="noopener noreferrer" title="Github" name="Github">
+            <GithubIcon size="1.5x" class="mr-3" />
           </a>
 
           <ToggleDarkMode class="ml-2 sm:ml-8">
@@ -82,7 +83,7 @@ query {
 <script>
 import ToggleDarkMode from "@/components/ToggleDarkMode";
 import Logo from '@/components/Logo';
-import { SunIcon, MoonIcon, GithubIcon, MessageSquareIcon, YoutubeIcon } from "vue-feather-icons";
+import { SunIcon, MoonIcon, GithubIcon, SendIcon , YoutubeIcon } from "vue-feather-icons";
 
 const Search = () => import(/* webpackChunkName: "search" */ "@/components/Search").catch(error => console.warn(error));
 
@@ -95,7 +96,7 @@ export default {
     MoonIcon,
     YoutubeIcon,
     GithubIcon,
-    MessageSquareIcon
+    SendIcon 
   },
 
   computed: {

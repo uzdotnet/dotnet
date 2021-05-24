@@ -3,18 +3,16 @@
     <div class="pt-8 md:pt-16">
       <div class="flex flex-col items-center">
         <div class="flex flex-col items-center mb-2 text-ui-primary">
-          <Logo :width="80" />
-          <h2 class="text-3xl text-6xl font-black tracking-tighter border-none">
-            Dotnet
-          </h2>
+          <!-- <Logo width="120"  /> -->
+          <!-- <h2 class="text-3xl text-6xl font-black tracking-tighter border-none">
+            DOT-NET.UZ
+          </h2> -->
         </div>
         <h1 class="text-4xl text-center lg:text-5xl">
-          Bilm shu yerdan boshlanadi.
+          .NET Uzbekistan Community
         </h1>
         <p class="text-xl font-medium text-center">
           Microsoft .NET platformasi bo'yicha O'zbekistonda ilk dokumentatsiya
-          <br>
-          <strong class="text-ui-primary">BSBA va Genius Coders jamoasi tomonidan sizga.</strong>
         </p>
 
         <div class="py-4">
@@ -22,17 +20,17 @@
         </div>
 
         <div class="flex justify-center mt-8">
-          <g-link
-            to="/docs/"
+          <a
+            href="https://docs.dot-net.uz/"
             class="flex items-center px-6 py-4 ml-auto text-2xl font-bold leading-none text-white border rounded-lg shadow-lg bg-ui-primary border-ui-primary transition-all duration-200 ease-out transform hover:shadow-xl hover:-translate-y-1"
           >
-            Boshlang
+            Boshlash
             <ArrowRightCircleIcon class="ml-4" size="1x" />
-          </g-link>
+          </a>
         </div>
 
         <p class="mt-8 text-center">
-          Ochiq manba tizimi asosida GPL-3.0 litsenziyalangan va <span class="border-b border-dashed border-ui-primary text-ui-primary"><a href="http://bsba.uz" target="_blank">BSBA</a></span> bilan <span class="border-b border-dashed border-ui-primary text-ui-primary">Genius Coders</span> guruhlari yordamida yaratilgan.
+          Ochiq manba tizimi asosida GPL-3.0 litsenziyalangan
         </p>
 
       </div>

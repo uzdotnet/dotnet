@@ -36,7 +36,7 @@
 
         <div class="flex items-center justify-end px-2 sm:px-4">
 
-          <a v-if="settings.youtube" href="https://youtube.com/geniuscodersuzbekistan/" class="hidden ml-3 sm:block" target="_blank" rel="noopener noreferrer" title="YouTube" name="YouTube">
+          <a v-if="settings.youtube" href="https://www.youtube.com/channel/UCWDF6TvAUR2NZsuljGO-i5A" class="hidden ml-3 sm:block" target="_blank" rel="noopener noreferrer" title="YouTube" name="YouTube">
             <YoutubeIcon size="1.5x" class="mr-3" />
           </a>
 
